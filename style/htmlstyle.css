@@ -12,6 +12,7 @@ html {
 
 body {
   margin: 0;
+  background-color:white;
   width: 100vw;
   display: flex;
   flex-direction: column;
