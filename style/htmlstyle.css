@@ -104,6 +104,7 @@ header {
 }
 #lesson {
   padding: 60px 10%;
+  background-color:white;
 }
 #lesson h2 {
   font-size: 28px;
