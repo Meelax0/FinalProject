@@ -1,0 +1,148 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'poppins';
+    margin: 0;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 10%;
+    padding: 10px 0 30px 0 ;
+}
+.firstbar,.secondbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.item img{height: 40px;}
+input{
+    width: 40%;
+    padding: 5px 20px 5px 20px;
+    font-size: medium;
+    font-family: 'poppins';
+    border: 1px solid;
+    border-radius: 6px;
+}
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.head-container{
+    width: 100%;
+    background-image: url(images/backgroundblue.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.introduction{
+    display: flex;
+    width: 90%;
+    padding: 20px;
+
+}
+.intro-left{
+    width: 60%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: flex-start;
+    margin-left:8%;
+}
+.intro-left button{
+    width: 150px;
+    font-size: 1.2rem;
+    background-color: #7F5283;
+    border: none;
+    padding: 5px 10px 5px 10px;
+    border-radius: 6px;
+    color: white;
+    font-family: 'poppins';
+}
+.intro-right{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    margin-right: 20px;
+}
+
+.products{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+.devicesholder{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 22% 22% 22%;
+    grid-template-rows: 20em 20em;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px ;
+    margin-bottom: 200px;
+    gap: 5em;
+}
+.deviceholder:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+}
+.deviceholder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    transform: scale(1);
+    transition: transform 0.5s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.deviceholder .info{
+    width: 100%;
+    height: 80%;
+    display: flex;
+}
+.deviceholder .price{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+
+}
+.infos img{
+    max-width: 180px;
+    max-height: 180px;
+    object-fit: contain;
+    display: block;
+   margin: 0 auto;
+}
+.deviceholder .price button{
+    background-color: #7F5283;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-family: 'poppins';
+}

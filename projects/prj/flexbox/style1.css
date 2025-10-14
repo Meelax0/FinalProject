@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 20%;
+}
+
+.yellow, .green {
+    width: 40%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.yellow {
+    background-color: yellow;
+    justify-content: center;
+}
+
+.green {
+    background-color: green;
+    justify-content: flex-end;
+}
+
+.s1, .s2, .s3, .s4 {
+    width: 15%;
+    height: 100%;
+    background-color: black;
+}
+.middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+}
+.box {
+    background-color: black;
+    width: 15%;
+    height: 25%;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    height: 20%;
+}
+
+.blue, .red {
+    width: 40%;
+    height: 70%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.blue {
+    background-color: blue;
+    justify-content: flex-start; 
+}
+
+.red {
+    background-color: red;
+    justify-content: center;
+}

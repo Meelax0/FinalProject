@@ -1,0 +1,262 @@
+:root {
+  --main: #485C11;
+  --light-green: #DFECC6;
+}
+
+html {
+  font-size: 100%;
+  font-family: 'DM Sans', sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  color: #222;
+}
+header {
+  width: 100%;
+  background: white;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.flex-container {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  margin: 10px auto; 
+  position: relative;
+}
+
+.logo {
+  width: 10rem;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.nav {
+  display: flex;
+  gap: 30px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: var(--main);
+}
+#projects{font-weight: 900;}
+.btn a {
+  background-color: var(--main);
+  border: 3px solid ;
+  border-radius: 30px;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+}
+.btn a:hover{
+  border-color: var(--main);
+  background-color: white;
+  color: var(--main);
+}
+
+
+.projects-page {
+  width: 100%;
+  padding: 60px 0;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects-intro {
+  text-align: center;
+  margin-bottom: 40px;
+  margin: 10%;
+}
+.projects-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  width: 85%;
+}
+
+.project-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  width: 320px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 20px;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+}
+
+.project-card h3 {
+  font-size: 1.3rem;
+  margin: 15px 0 10px;
+  color: var(--main);
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #444;
+  margin: 0 20px 20px;
+}
+
+.project-card a {
+  margin-bottom: 20px;
+}
+.back {
+  margin: 20px;
+  background-color: var(--main);
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 20px 0;
+  padding: 12px 20Px 12px 20px;
+}
+.btn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.back:hover{
+  background: #3a4a0c;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+footer {
+  background-color: var(--light-green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.contact h3, .catalogue h3 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.contact p,
+.catalogue a {
+  font-size: 1rem;
+  margin: 5px 0;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.catalogue {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  width: 35%;
+}
+
+.contact {
+  width: 65%;
+}
+
+.links,
+.follow {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalogue a:hover {
+  color: black;
+  font-weight: 600;
+}
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .menu{
+    display: block;
+  }
+  .nav {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    padding: 15px;
+    gap: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+  }
+  .menu-toggle:checked ~ .nav {
+    display: flex;
+  }
+  .head a{
+    display: none;
+  }
+  footer {
+    text-align: center;
+    padding: 30px 15px;
+  }
+  .foot{
+    display: flex;
+    flex-direction: column;
+  }
+  .contact, .catalogue {
+    width: 100%;
+  }
+
+  .catalogue {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .contact h3, .catalogue h3 {
+    font-size: 1.1rem;
+  }
+
+  .contact p, .catalogue a {
+    font-size: 0.9rem;
+  }
+}

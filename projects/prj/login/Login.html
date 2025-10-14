@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LogIn page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background: url('images/max-zhdanov-DBnxH7Ro97E-unsplash.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .navbar {
+            background-color: rgba(103, 172, 229, 0.6);
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-family: 'Roboto', sans-serif;
+            padding: 8px 16px;
+            border-radius: 6px;
+        }
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+        }
+        .container {
+            background-color: transparent;
+            padding: 40px;
+            border-radius: 6px;
+            align-items: center;
+            text-align: center;
+            border: 2px solid white;
+        }
+        .btn {
+            background-color: #0056b3;
+            color: white;
+            margin: 20px;
+            padding: 15px 50px;
+            border-radius: 6px;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .input {
+            width: 100%;
+            height: 35px;
+            background: white;
+            color: black;
+            border-radius: 30px;
+        }
+        h1 {
+            margin-bottom: 60px;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body style="margin: 0;">
+    <header class="navbar">
+    <nav>
+        <ul style="list-style: none; display: flex; justify-content: center; margin: 0; padding: 0;">
+            <li><a href="MainPage.html">Home</a></li>
+            <li><a href="Login.html">Login</a></li>
+            <li><a href="SignUp.html">Sign Up</a></li>
+            <li><a href="https://www.instagram.com/sevree.education/" target="_blank">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+    <main>
+        <section>
+            <div class="container">
+                <h1>Login</h1>
+                <form id="myform" action="Profile.html" method="get">
+                    <label for="username">Username: </label><br>
+                    <input type="text" id="username" name="Username" required class="input"><br>
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" name="password" class="input" required><br>
+                    <label><input type="checkbox"> Remember me </label><br>
+                    <button type="submit" class="btn">Submit</button>
+                    <button type="reset" class="btn">Reset</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" style="background-color: transparent;">
+        <p>2025 Meelax0. All rights reserved.</p>
+    </footer>
+</body>
+</html>

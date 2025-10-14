@@ -1,0 +1,411 @@
+:root {
+  --main: #485C11;
+  --light-green: #DFECC6;
+}
+
+html {
+  font-size: 100%;
+  font-family: 'DM Sans', sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  color: #222;
+}
+header {
+  width: 100%;
+  background: white;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.flex-container {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  margin: 10px auto; 
+  position: relative;
+}
+
+.logo {
+  width: 10rem;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.nav {
+  display: flex;
+  gap: 30px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: var(--main);
+}
+
+.hero {
+  margin-top: 5%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0;
+}
+.heroleft h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.heroleft p {
+  font-size: 1.2rem;
+  margin: 15px 0;
+  color: #444;
+}
+
+.herobutton {
+  display: flex;
+  gap: 15px;
+}
+
+.herobutton a,.btn a,.card a {
+  background-color: var(--main);
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  border: 3px solid transparent;
+  box-sizing: border-box;
+  margin: 20px 0;
+  padding: 12px 20px 12px 20px;
+}
+.herobutton a:hover,.btn a:hover,.card a:hover{
+  background: #3a4a0c;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+/* *************** WHO AM I *********** */
+#myinfo {
+  width: 100%;
+  background-color: var(--light-green);
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+}
+.lefttext h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.lefttext p {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.memoji img {
+  max-width: 250px;
+}
+
+/* *************** COURSES *********** */
+.courses-intro {
+  padding: 80px 20px;
+  background: white;
+  text-align: center;
+}
+
+.courses .text h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.courses .text p {
+  font-size: 1.1rem;
+  color: #555;
+  margin: 5px 0;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 50px; 
+  margin-top: 40px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow-x: hidden;
+  width: 350px;
+  min-height: 420px;
+}
+.card:hover{
+  transform: translateY(-5px);
+}
+.card .logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.html-card .logo {
+  background: #CA4321;
+}
+
+.css-card .logo {
+  background: #1266A3;
+}
+
+.card .text {
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+  text-align: center;
+  color: #222;
+}
+
+.card p {
+  text-align: start;
+  margin: 6px 0;
+  line-height: 1.5;
+}
+footer {
+  background-color: var(--light-green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.contact h3, .catalogue h3 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.contact p,
+.catalogue a {
+  font-size: 1rem;
+  margin: 5px 0;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.catalogue {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  width: 35%;
+}
+
+.contact {
+  width: 65%;
+}
+
+.links,
+.follow {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalogue a:hover {
+  color: black;
+  font-weight: 600;
+}
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  /* HEADER */
+  .menu {
+    display: block;
+  }
+  .nav {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    padding: 15px;
+    gap: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+  }
+  .menu-toggle:checked ~ .nav {
+    display: flex;
+  }
+
+  .btn a {
+    display: none;
+  }
+  .logo {
+    width: 10rem;
+  }
+
+  .heroimg {
+    display: none;
+  }
+
+  .flex-container {
+    text-align: center;
+    gap: 20px;
+  }
+
+  .heroleft {
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+  }
+
+  .heroleft h1 {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+
+  .heroleft p {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+
+  .herobutton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  .herobutton button {
+    padding: 10px 18px;
+    font-size: 0.9rem;
+  }
+
+  /* WHO AM I */
+
+  .lefttext, .memoji {
+    width: 100%;
+  }
+
+  .lefttext h1 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+
+  .lefttext p {
+    font-size: 1rem;
+    padding: 0;
+  }
+  .memoji{
+    display: none;
+  }
+
+  /* COURSES */
+  .courses-intro {
+    padding: 40px 15px;
+  }
+
+  .courses .text h1 {
+    font-size: 1.6rem;
+  }
+
+  .courses .text p {
+    font-size: 0.95rem;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 350px;
+    min-height: auto;
+  }
+
+  .card h3 {
+    font-size: 1.1rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+
+  .card a {
+    width: 80%;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  /* FOOTER */
+  footer {
+    text-align: center;
+    padding: 30px 15px;
+  }
+  .foot{
+    display: flex;
+    flex-direction: column;
+  }
+  .contact, .catalogue {
+    width: 100%;
+  }
+
+  .catalogue {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .contact h3, .catalogue h3 {
+    font-size: 1.1rem;
+  }
+
+  .contact p, .catalogue a {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,272 @@
+:root {
+  --main: #485C11;
+  --light-green: #DFECC6;
+}
+
+html {
+  font-size: 100%;
+  font-family: 'DM Sans', sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  color: #222;
+}
+
+/* *************** HEADER *********** */
+header {
+  width: 100%;
+  background: white;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  width: 85%;
+  gap: 10%;
+}
+.footcont{
+  align-items: flex-start;
+}
+.logo {
+  width: 10rem;
+}
+.menu-toggle {
+  display: none;
+}
+
+.menu {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.nav {
+  display: flex;
+  gap: 30px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: var(--main);
+  font-weight: bold;
+}
+
+.hero {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0;
+  background-color: var(--light-green);
+}
+
+
+.heroleft{
+  width: 60%;
+}
+.htmlLogo{
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.htmlLogo img{
+  width: 80%;
+}
+.heroleft h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.heroleft p {
+  font-size: 1.2rem;
+  margin: 15px 0;
+  color: #444;
+}
+#lesson {
+  padding: 60px 10%;
+}
+#lesson h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color:var(--main);
+}
+#lesson p {
+  margin-bottom: 20px;
+  color: black;
+}
+.example-box{
+  background: 6px solid var(--light-green);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  overflow-x: auto;
+}
+#lesson pre{
+  background: #222;
+  color: #f1f1f1;
+  padding: 15px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+.example-result{
+  background-color: #f1f0f0;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 10px;
+  border-radius: 8px;
+
+}
+.back {
+  background-color: var(--main);
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 20px 0;
+  padding: 12px 20Px 12px 20px;
+}
+.btn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.back:hover{
+  background: #3a4a0c;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+footer {
+  background-color: var(--light-green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.contact h3, .catalogue h3 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.contact p,
+.catalogue a {
+  font-size: 1rem;
+  margin: 5px 0;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.catalogue {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  width: 35%;
+}
+
+.contact {
+  width: 65%;
+}
+
+.links,
+.follow {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalogue a:hover {
+  color: black;
+  font-weight: 600;
+}
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .menu{
+    display: block;
+  }
+  .nav{
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    padding:15px;
+    gap: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  .menu-toggle:checked ~ .nav{
+    display: flex;
+  }
+  .htmlLogo{
+    display: none;
+  }
+  .flex-container{
+    text-align: center;
+    gap: 20px;
+  }
+  .heroleft {
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+  }
+
+  .heroleft h1 {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+
+  .heroleft p {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+  #lesson pre{
+    white-space: pre-wrap;  
+    word-break: break-word; 
+    overflow-x: auto; 
+  }
+  footer {
+    text-align: center;
+    padding: 30px 15px;
+  }
+  .foot{
+    flex-direction: column;
+  }
+  .contact, .catalogue {
+    width: 100%;
+  }
+  .catalogue {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .contact h3, .catalogue h3 {
+    font-size: 1.1rem;
+  }
+
+  .contact p, .catalogue a {
+    font-size: 0.9rem;
+  }
+}

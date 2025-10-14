@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn CSS - H-codes</title>
+  <link rel="stylesheet" href="style/cssStyle.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="header-container">
+      <img src="images/logo-Hcodes.png" class="logo" alt="H-codes ">
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu">&#9776;</label>
+      <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="">About Me</a>
+        <a href="projects/projects.html">Projects</a>
+        <a href="contact.html">Contact Me</a>
+      </div>
+    </div>
+
+  </header>
+  <!-- MAIN CONTENT -->
+  <main class="content">
+    <section class="hero">
+      <div class="flex-container">
+        <div class="heroleft">
+          <h1>Learn CSS</h1>
+          <p>&lt; HTML is the language that gives structure to every webpage. Let’s look at the most common
+            elements step by step. &#62;</p>
+        </div>
+        <div class="cssLogo">
+          <img src="images/CSSLogo.png" alt="">
+        </div>
+      </div>
+    </section>
+    <section class="lesson">
+      <h2>1. What is CSS?</h2>
+      <p>&lt;CSS (Cascading Style Sheets) is used to control the appearance of HTML elements.
+        With CSS, you can change colors, fonts, layouts, and make your website responsive.&#62;</p>
+    </section>
+  
+    <section class="lesson">
+      <h2>2. CSS Syntax</h2>
+      <p>Every CSS rule has three parts: a <strong>selector</strong>, a <strong>property</strong>, and a
+        <strong>value</strong>.
+      </p>
+      <pre><code>
+  selector {
+    property: value;
+  }
+        </code></pre>
+      <p><strong>Example:</strong> This CSS makes all paragraphs blue:</p>
+      <pre><code>
+  p {
+    color: blue;
+  }
+        </code></pre>
+      <p><span style="font-weight: bolder; text-decoration-line: underline;"> Result : </span></p>
+      <div class="css-result">
+        <p class="syntax-res">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil sequi distinctio quos nemo
+          tenetur autem nam aut eos exercitationem repellendus, eum praesentium deleniti, asperiores aliquid doloribus
+          quaerat amet ratione excepturi!</p>
+      </div>
+    </section>
+  
+    <section class="lesson">
+      <h2>3. Colors in CSS</h2>
+      <p>You can set colors using names, HEX codes, RGB, or HSL values.</p>
+      <pre><code>
+  h1 { color: red; }          /* color name */
+  h1 { color: #ff0000; }      /* HEX */
+  h1 { color: rgb(255, 0, 0);} /* RGB */
+  h1 { color: hsl(0, 100%, 50%);} /* HSL */
+        </code></pre>
+    </section>
+  
+    <section class="lesson">
+      <h2>4. Backgrounds</h2>
+      <p>The <code>background-color</code> property changes the background of elements.</p>
+      <pre><code>
+  body {
+    background-color: green;
+  }
+        </code></pre>
+      <p><span style="font-weight: bolder; text-decoration-line: underline;"> Result : </span></p>
+      <div class="box-result"></div>
+    </section>
+  
+    <section class="lesson">
+      <h2>5. The Box Model</h2>
+      <p>All elements in CSS use the box model: <strong>content → padding → border → margin</strong>.</p>
+      <img src="images/box-model.png" alt="CSS Box Model" class="box-model-img">
+  
+    </section>
+  
+    <section class="lesson">
+      <h2>6. Fonts and Text</h2>
+      <p>CSS lets you control font families, sizes, and styles.</p>
+      <pre><code>
+  p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+  }
+        </code></pre>
+      <div class="css-result">
+        <p>Without css :</p>
+        <p>&lt;Paragraph test</p>
+        <p>With css :</p>
+        <p class="fonttest">Paragraph test</p>
+      </div>
+  
+    </section>
+  
+    <section class="lesson">
+      <h2>7. Layout with Flexbox</h2>
+      <p>Flexbox makes it easy to align and distribute space in a container.</p>
+      <pre><code>
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+        </code></pre>
+    </section>
+    <div class="btn">
+      <a href="index.html" class="back">BACK TO MAIN Page</a>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="flex-container foot">
+      <div class="contact">
+        <h3>Contact me</h3>
+        <p>Email : bouheraoua.rabah006@gmail.com</p>
+        <p>Phone : +213 658 659 569</p>
+      </div>
+      <div class="catalogue">
+        <div class="links">
+          <h3>Quick Links</h3>
+          <a href="">Home</a>
+          <a href="">About Me</a>
+          <a href="">Projects</a>
+          <a href="">Contact Me</a>
+        </div>
+        <div class="follow">
+          <h3>Follow Me</h3>
+          <a href="">Instagram</a>
+          <a href="">Facebook</a>
+          <a href="">Twitter</a>
+          <a href="">Linkedin</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
