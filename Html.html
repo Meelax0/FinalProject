@@ -46,7 +46,7 @@
                 <code>&lt;html&gt;</code> tag. Inside it, we have a <code>&lt;head&gt;</code> (page info) and
                 <code>&lt;body&gt;</code> (page content).
             </p>
-        
+
             <div class="example-box">
                 <h3>Example Code:</h3>
                 <pre>
@@ -73,7 +73,7 @@
             <p>Headings define titles and subtitles. <code>&lt;h1&gt;</code> is the biggest, <code>&lt;h6&gt;</code> is
                 the
                 smallest. Paragraphs are written with <code>&lt;p&gt;</code>.</p>
-        
+
             <div class="example-box">
                 <pre>
         &lt;h1&gt;This is a main heading&lt;/h1&gt;
@@ -93,27 +93,62 @@
             <h2>3. Links & Images</h2>
             <p>Links are created with the <code>&lt;a&gt;</code> tag, and images with the <code>&lt;img&gt;</code> tag
                 (which needs <code>src</code> and <code>alt</code> attributes).</p>
-        
+
             <div class="example-box">
                 <pre>
         &lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;
         
         &lt;img src="images/html-logo.png" alt="HTML Logo"&gt;
               </pre>
-              <p>Result:</p>
+                <p>Result:</p>
                 <div class="example-result">
                     <a href="https://www.example.com" target="_blank">Visit Example</a><br><br>
                     <img src="images/htmlLogo.png" alt="HTML Logo" width="100">
                 </div>
             </div>
         </section>
-
-
         <section id="lesson">
-            <h2>4. Lists</h2>
+            <h2>4. videos & Audios</h2>
+            <p>HTML allows you to embed videos and audio files directly into your web pages. <br>
+                You can use the <code>&lt;video&gt;</code> tag for videos and the <code>&lt;audio&gt;</code> tag for sound. <br>
+                Both tags can include attributes like <code>controls</code>, <code>autoplay</code>, and <code>loop</code></p>
+            <div class="example-box">
+                <pre>
+                        &lt;!-- Video Example --&gt;
+        &lt;video width="320" height="240" controls&gt;
+          &lt;source src="videos/sample-video.mp4" type="video/mp4"&gt;
+          Your browser does not support the video tag.
+        &lt;/video&gt;
+        
+                        &lt;!-- Audio Example --&gt;
+        &lt;audio controls&gt;
+          &lt;source src="audio/sample-audio.mp3" type="audio/mpeg"&gt;
+          Your browser does not support the audio element.
+        &lt;/audio&gt;
+                </pre>
+                <p>Result:</p>
+                <div class="example-result">
+                    <p><strong>Video Example:</strong></p>
+                    <video controls>
+                        <source src="videos.sounds/sample.mp4">
+                        Your browser does not support the video tag.
+                    </video>
+
+                    <br><br>
+
+                    <p><strong>Audio Example:</strong></p>
+                    <audio controls>
+                        <source src="videos.sounds/sample-15s.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </section>
+        <section id="lesson">
+            <h2>5. Lists</h2>
             <p>Lists can be unordered (<code>&lt;ul&gt;</code>, with bullets) or ordered (<code>&lt;ol&gt;</code>, with
                 numbers). Items go inside <code>&lt;li&gt;</code> tags.</p>
-        
+
             <div class="example-box">
                 <pre>
         &lt;ul&gt;
@@ -128,7 +163,7 @@
           &lt;li&gt;Third&lt;/li&gt;
         &lt;/ol&gt;
               </pre>
-              <p>Result:</p>
+                <p>Result:</p>
                 <div class="example-result">
                     <ul>
                         <li>Apples</li>
@@ -145,25 +180,59 @@
         </section>
 
         <section id="lesson">
-            <h2>5. Tables</h2>
+            <h2>6. Tables</h2>
             <p>Tables display data in rows (<code>&lt;tr&gt;</code>) and columns (<code>&lt;td&gt;</code>). Table
                 headers
                 use <code>&lt;th&gt;</code>.</p>
-        
+
             <div class="example-box">
                 <pre>
-                    &lt;table&gt;
-                      &lt;tr&gt;
-                        &lt;th&gt;Name&lt;/th&gt;
-                        &lt;th&gt;Age&lt;/th&gt;
-                      &lt;/tr&gt;
-                      &lt;tr&gt;
-                        &lt;td&gt;Hichem&lt;/td&gt;
-                        &lt;td&gt;19&lt;/td&gt;
-                      &lt;/tr&gt;
-                    &lt;/table&gt;
+        &lt;table&gt;
+            &lt;tr&gt;
+                &lt;th&gt;Name&lt;/th&gt;
+                &lt;th&gt;Age&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Hichem&lt;/td&gt;
+                &lt;td&gt;19&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
                 </pre>
-                 <p>Result:</p>
+                <p>Result:</p>
+                <div class="example-result">
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                        </tr>
+                        <tr>
+                            <td>Hichem</td>
+                            <td>19</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </section>
+        <section id="lesson">
+            <h2>7. Tables</h2>
+            <p>Tables display data in rows (<code>&lt;tr&gt;</code>) and columns (<code>&lt;td&gt;</code>). Table
+                headers use <code>&lt;th&gt;</code>.</p>
+
+            <div class="example-box">
+                <pre>
+        &lt;table&gt;
+          &lt;tr&gt;
+            &lt;th&gt;Name&lt;/th&gt;
+            &lt;th&gt;Age&lt;/th&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;Hichem&lt;/td&gt;
+            &lt;td&gt;19&lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/table&gt;
+    </pre>
+                <p>Result:</p>
                 <div class="example-result">
                     <table>
                         <tr>
@@ -178,36 +247,78 @@
                 </div>
             </div>
         </section>
+        <section id="lesson">
+            <h2>8. Forms</h2>
+            <p>Forms are used to collect information from users — like names, emails, and messages.
+                They use the <code>&lt;form&gt;</code> tag, which can include input fields, labels, and buttons.</p>
+
+            <div class="example-box">
+                <h3>Example Code:</h3>
+                <pre>
+&lt;form action="submit" method="post"&gt;
+  &lt;label for="name"&gt;Name:&lt;/label&gt;
+  &lt;input type="text" id="name" name="name"&gt;&lt;br&gt;&lt;br&gt;
+
+  &lt;label for="email"&gt;Email:&lt;/label&gt;
+  &lt;input type="email" id="email" name="email"&gt;&lt;br&gt;&lt;br&gt;
+
+  &lt;label for="message"&gt;Message:&lt;/label&gt;&lt;br&gt;
+  &lt;textarea id="message" name="message" rows="4" cols="30"&gt;&lt;/textarea&gt;&lt;br&gt;&lt;br&gt;
+
+  &lt;button type="submit"&gt;Send&lt;/button&gt;
+&lt;/form&gt;
+    </pre>
+
+                <p>Result:</p>
+                <div class="example-result">
+                    <form action="#" method="post">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name"><br><br>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email"><br><br>
+
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" rows="4" cols="30"></textarea><br><br>
+
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
         <div class="btn">
+            <a href="CSS.html" class="back">Continue To CSS</a>
             <a href="index.html" class="back">BACK TO MAIN Page</a>
         </div>
-        
+
+
     </main>
     <footer id="footer">
-    <div class="flex-container foot">
-      <div class="contact">
-        <h3>Contact me</h3>
-        <p>Email : bouheraoua.rabah006@gmail.com</p>
-        <p>Phone : +213 658 659 569</p>
-      </div>
-      <div class="catalogue">
-        <div class="links">
-          <h3>Quick Links</h3>
-          <a href="">Home</a>
-          <a href="">About Me</a>
-          <a href="">Projects</a>
-          <a href="">Contact Me</a>
+        <div class="flex-container foot">
+            <div class="contact">
+                <h3>Contact me</h3>
+                <p>Email : bouheraoua.rabah006@gmail.com</p>
+                <p>Phone : +213 658 659 569</p>
+            </div>
+            <div class="catalogue">
+                <div class="links">
+                    <h3>Quick Links</h3>
+                    <a href="">Home</a>
+                    <a href="">About Me</a>
+                    <a href="">Projects</a>
+                    <a href="">Contact Me</a>
+                </div>
+                <div class="follow">
+                    <h3>Follow Me</h3>
+                    <a href="">Instagram</a>
+                    <a href="">Facebook</a>
+                    <a href="">Twitter</a>
+                    <a href="">Linkedin</a>
+                </div>
+            </div>
         </div>
-        <div class="follow">
-          <h3>Follow Me</h3>
-          <a href="">Instagram</a>
-          <a href="">Facebook</a>
-          <a href="">Twitter</a>
-          <a href="">Linkedin</a>
-        </div>
-      </div>
-    </div>
-  </footer>
+    </footer>
 </body>
 
 </html>

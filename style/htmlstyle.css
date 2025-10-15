@@ -133,6 +133,9 @@ header {
   border-radius: 8px;
 
 }
+.example-result video{
+  width:320px;
+}
 .back {
   background-color: var(--main);
   border: none;
@@ -149,6 +152,8 @@ header {
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .back:hover{
   background: #3a4a0c;
