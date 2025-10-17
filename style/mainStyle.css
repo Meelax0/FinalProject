@@ -36,6 +36,7 @@ header {
   gap: 40px;
   margin: 10px auto; 
   position: relative;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -64,6 +65,7 @@ header {
   text-decoration: none;
   color: black;
   font-weight: 500;
+  white-space: nowrap;
 }
 
 .nav a:hover {
