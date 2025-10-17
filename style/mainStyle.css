@@ -93,6 +93,7 @@ header {
 .herobutton {
   display: flex;
   gap: 15px;
+  white-space: nowrap;
 }
 
 .herobutton a,.btn a,.card a {

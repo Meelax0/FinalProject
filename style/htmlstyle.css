@@ -204,7 +204,7 @@ footer {
   color: black;
   font-weight: 600;
 }
-.example-box a[target="_blank"] {
+.Video{
   width: fit-content;
   display: inline-block;
   margin-top: 10px;
@@ -217,15 +217,10 @@ footer {
   transition: background-color 0.3s ease, transform 0.2s ease;
   font-family: 'Poppins', sans-serif;
 }
-.example-box a[target="_blank"]:hover {
+.Video:hover {
   background-color: #0056b3;
   transform: translateY(-2px);
 }
-
-.example-box a[target="_blank"]::before {
-  font-weight: bold;
-}
-
 @media (max-width: 768px) {
   body {
     overflow-x: hidden;
