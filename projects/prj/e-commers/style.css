@@ -91,6 +91,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     width: 80%;
 }
 .devicesholder{
@@ -99,10 +100,11 @@ main{
     grid-template-columns: 22% 22% 22%;
     grid-template-rows: 20em 20em;
     justify-content: center;
-    align-items: center;
     margin-top: 100px ;
     margin-bottom: 200px;
     gap: 5em;
+    align-items: stretch;
+    flex-wrap: wrap;
 }
 .deviceholder:hover{
     transform: scale(1.1);
@@ -145,4 +147,16 @@ main{
     border-radius: 10px;
     color: white;
     font-family: 'poppins';
+}
+@media (max-width:800px){
+    .head-container{
+        text-align: center;
+    }
+    .intro-left{
+        width: 80%;
+        align-items: center;
+    }
+    .intro-right{
+        display: none;
+    }
 }

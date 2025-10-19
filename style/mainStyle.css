@@ -36,7 +36,6 @@ header {
   gap: 40px;
   margin: 10px auto; 
   position: relative;
-  flex-wrap: wrap;
 }
 
 .logo {
@@ -81,11 +80,11 @@ header {
   padding: 60px 0;
   background-color: white;
 }
+.hero
 .heroleft h1 {
   font-size: 3rem;
   font-weight: 700;
 }
-
 .heroleft p {
   font-size: 1.2rem;
   margin: 15px 0;
@@ -198,7 +197,6 @@ header {
 .css-card .logo {
   background: #1266A3;
 }
-
 .card .text {
   padding: 20px;
   flex-grow: 1;
@@ -263,7 +261,6 @@ footer {
   body {
     overflow-x: hidden;
   }
-
   /* HEADER */
   .menu {
     display: block;
