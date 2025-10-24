@@ -46,7 +46,12 @@
       <h2>1. What is CSS?</h2>
       <p>&lt;CSS (Cascading Style Sheets) is used to control the appearance of HTML elements.
         With CSS, you can change colors, fonts, layouts, and make your website responsive.&#62;</p>
-      <a href="video_lesson1.html" target="_blank">🎬 Play Video</a>
+      <a href="#" class="Video" onclick="toggleVideo(event, 'lesson1')">🎬 Play Video</a>
+      <div id="lesson1" class="video-container" style="display:none;">
+        <video controls width="480" style="margin:10px;">
+          <source src="videos.sounds/sample.mp4" type="video/mp4">
+        </video>
+      </div>
     </section>
 
     <section class="lesson">
@@ -67,7 +72,12 @@ p {
       <div class="example-result">
         <p><span style="color: blue;"> ipsum dolor, sit amet consectetur adipisicing elit. Sunt amet, dolore eum dicta commodi maxime aliquid dignissimos atque asperiores fuga veritatis doloremque exercitationem ipsa cumque, odio accusantium ea alias molestiae!</span></p>
       </div>
-      <a href="video_lesson2.html" target="_blank">🎬 Play Video</a>
+      <a href="#" class="Video" onclick="toggleVideo(event, 'lesson2')">🎬 Play Video</a>
+      <div id="lesson2" class="video-container" style="display:none;">
+        <video controls width="480" style="margin:10px;">
+          <source src="videos.sounds/sample.mp4" type="video/mp4">
+        </video>
+      </div>
     </section>
     <section class="lesson">
       <h2>3. Colors in CSS</h2>
@@ -78,7 +88,12 @@ h1 { color: #ff0000; }      /* HEX */
 h1 { color: rgb(255, 0, 0);} /* RGB */
 h1 { color: hsl(0, 100%, 50%);} /* HSL */
       </code></pre>
-      <a href="video_lesson3.html" target="_blank">🎬 Play Video</a>
+      <a href="#" class="Video" onclick="toggleVideo(event, 'lesson3')">🎬 Play Video</a>
+      <div id="lesson3" class="video-container" style="display:none;">
+        <video controls width="480" style="margin:10px;">
+          <source src="videos.sounds/sample.mp4" type="video/mp4">
+        </video>
+      </div>
     </section>
 
     <section class="lesson">
@@ -93,14 +108,24 @@ body {
       <div class="example-result">
         <p>Background color example area</p>
       </div>
-      <a href="video_lesson4.html" target="_blank">🎬 Play Video</a>
+      <a href="#" class="Video" onclick="toggleVideo(event, 'lesson4')">🎬 Play Video</a>
+      <div id="lesson4" class="video-container" style="display:none;">
+        <video controls width="480" style="margin:10px;">
+          <source src="videos.sounds/sample.mp4" type="video/mp4">
+        </video>
+      </div>
     </section>
 
     <section class="lesson">
       <h2>5. The Box Model</h2>
       <p>All elements in CSS use the box model: <strong>content → padding → border → margin</strong>.</p>
       <img src="images/box-model.png" alt="CSS Box Model">
-      <a href="video_lesson5.html" target="_blank">🎬 Play Video</a>
+      <a href="#" class="Video" onclick="toggleVideo(event, 'lesson5')">🎬 Play Video</a>
+      <div id="lesson5" class="video-container" style="display:none;">
+        <video controls width="480" style="margin:10px;">
+          <source src="videos.sounds/sample.mp4" type="video/mp4">
+        </video>
+      </div>
     </section>
 
     <section class="lesson">
@@ -118,7 +143,12 @@ p {
         <p>Without CSS: Paragraph test</p>
         <p>With CSS: Paragraph test</p>
       </div>
-      <a href="video_lesson6.html" target="_blank">🎬 Play Video</a>
+      <a href="#" class="Video" onclick="toggleVideo(event, 'lesson6')">🎬 Play Video</a>
+      <div id="lesson6" class="video-container" style="display:none;">
+        <video controls width="480" style="margin:10px;">
+          <source src="videos.sounds/sample.mp4" type="video/mp4">
+        </video>
+      </div>
     </section>
 
     <section class="lesson">
@@ -131,7 +161,12 @@ p {
   align-items: center;
 }
       </code></pre>
-      <a href="video_lesson7.html" target="_blank">🎬 Play Video</a>
+      <a href="#" class="Video" onclick="toggleVideo(event, 'lesson7')">🎬 Play Video</a>
+      <div id="lesson7" class="video-container" style="display:none;">
+        <video controls width="480" style="margin:10px;">
+          <source src="videos.sounds/sample.mp4" type="video/mp4">
+        </video>
+      </div>
     </section>
 
     <section class="lesson">
@@ -154,7 +189,12 @@ p { color: blue; }
 a:hover { color: orange; }
       </code></pre>
       <p>Specificity hierarchy: <strong>ID > Class > Element</strong></p>
-      <a href="video_lesson8.html" target="_blank">🎬 Play Video</a>
+      <a href="#" class="Video" onclick="toggleVideo(event, 'lesson8')">🎬 Play Video</a>
+      <div id="lesson8" class="video-container" style="display:none;">
+        <video controls width="480" style="margin:10px;">
+          <source src="videos.sounds/sample.mp4" type="video/mp4">
+        </video>
+      </div>
     </section>
 
     <section class="lesson">
@@ -180,7 +220,12 @@ a:hover { color: orange; }
           <div class="grid-item">Grid 2</div>
         </div>
       </div>
-      <a href="video_lesson9.html" target="_blank">🎬 Play Video</a>
+      <a href="#" class="Video" onclick="toggleVideo(event, 'lesson9')">🎬 Play Video</a>
+      <div id="lesson9" class="video-container" style="display:none;">
+        <video controls width="480" style="margin:10px;">
+          <source src="videos.sounds/sample.mp4" type="video/mp4">
+        </video>
+      </div>
     </section>
 
     <section class="lesson">
@@ -208,7 +253,12 @@ button:hover {
       <div class="example-result">
         <button>CSS Variable Button</button>
       </div>
-      <a href="video_lesson10.html" target="_blank">🎬 Play Video</a>
+      <a href="#" class="Video" onclick="toggleVideo(event, 'lesson10')">🎬 Play Video</a>
+      <div id="lesson10" class="video-container" style="display:none;">
+        <video controls width="480" style="margin:10px;">
+          <source src="videos.sounds/sample.mp4" type="video/mp4">
+        </video>
+      </div>
     </section>
 
     <div class="btn">
@@ -242,5 +292,12 @@ button:hover {
       </div>
     </div>
   </footer>
+  <script>
+    function toggleVideo(event, id) {
+      event.preventDefault();
+      const video = document.getElementById(id);
+      video.style.display = (video.style.display === "none") ? "block" : "none";
+    }
+  </script>
 </body>
 </html>
