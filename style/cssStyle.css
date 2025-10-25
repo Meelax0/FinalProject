@@ -336,6 +336,7 @@ footer {
   }
   .foot{
     flex-direction:column;
+    margin-bottom: 20px;
   }
   .cssLogo{
     display: none;
